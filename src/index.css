@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.App {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  font-size: 14px;
+  height: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.dashboard {
+  background-color: #519839;
+  padding: 0 8px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: scroll;
+}
+
+.dashboard-columns {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.list-wrapper {
+  width: 272px;
+  margin-top: 16px;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.list-content {
+  background-color: #ebecf0;
+  height: auto;
+  border-radius: 3px;
+  padding: 0 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.list-heading {
+  padding: 5px 4px;
+  min-height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.list-header-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.list-cards {
+  padding: 0 4px;
+}
+
+.list-card-wrapper {
+  background-color: #fff;
+  padding: 6px 8px 6px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.list-card-wrapper textarea {
+  cursor: pointer;
+}
+
+.list-card-detail {
+  word-wrap: break-word;
+  color: #172b4d;
+  /* font-size: 14px; */
+  width: 100%;
+  border: none;
+  resize: none;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+
+.list-card-detail:focus {
+  outline: none;
+}
+
+.add-card-section {
+  padding: 4px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.add-btn,
+.del-btn {
+  color: #5e6c84;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 8px 4px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.add-btn {
+  flex: 1;
+  text-align: left;
+}
+
+.add-btn:hover {
+  background-color: #dadce2
+}
+
+.add-list-content {
+  background-color: #ffffff3d;
+  border-radius: 3px;
+  max-height: 50px;
+  transition: all 200ms;
+}
+
+.add-list-content.open {
+  /* height: auto; */
+  background-color: #ebecf0;
+  max-height: 100px;
+}
+
+.add-list-content .add-list-control {
+  display: none;
+  height: 200%;
+}
+
+.add-list-control .second-row {
+  margin-top: 4px;
+  display: flex;
+}
+
+
+.add-list-content.open .add-list-control {
+  display: block;
+  padding: 4px;
+}
+
+.add-list-title {
+  height: 40px;
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px;
+}
+
+.add-list-title {
+  border: solid 2px #0079bf;
+  border-radius: 3px;
+}
+
+.add-list-title:focus {
+  outline: none;
+}
+
+.add-list-btn {
+  padding: 4px 12px;
+  background-color: #0079bf;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  min-height: 30px;
+}
+
+.close-add-list-btn {
+  background-color: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-list-btn:hover {
+  background-color: #026aa7;
+}
+
+/* add card control */
+.add-card-control {
+  padding: 4px;
+}
+
+.add-card-control .first-row {
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.add-card-control .second-row {
+  display: flex;
+  margin-top: 8px;
+}
+
+.add-card-title {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  width: 100%;
+  min-height: 40px;
+  resize: vertical;
+  border-radius: 3px;
+  border: none;
+}
+
+.add-card-title:focus {
+  outline: none;
+}
+
+/* dnd  */
